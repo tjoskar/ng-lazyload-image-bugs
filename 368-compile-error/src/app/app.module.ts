@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { LazyLoadImageModule, intersectionObserverPreset } from 'ng-lazyload-image';
 import { AppComponent } from './app.component';
+import { ViewerModule } from './viewer.component';
 
 @NgModule({
   declarations: [
@@ -9,9 +10,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    LazyLoadImageModule.forRoot({
-      preset: intersectionObserverPreset
-    })
+    ViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
