@@ -1,6 +1,7 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {RouterModule} from '@angular/router';
+import {LazyLoadImageModule, intersectionObserverPreset} from 'ng-lazyload-image';
 
 import {AppComponent} from './app.component';
 import {HomeComponent} from './home/home.component';
@@ -18,6 +19,9 @@ import {TransferHttpCacheModule} from '@nguniversal/common';
       { path: 'lazy', loadChildren: './lazy/lazy.module#LazyModule'},
       { path: 'lazy/nested', loadChildren: './lazy/lazy.module#LazyModule'}
     ]),
+    LazyLoadImageModule.forRoot({
+      preset: intersectionObserverPreset
+    }),
     TransferHttpCacheModule,
   ],
   providers: [],
