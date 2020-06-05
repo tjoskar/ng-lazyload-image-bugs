@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  template: '<h1>Hello</h1>',
+  template: ` <img [defaultImage]="defaultImage" [lazyLoad]="image" /> `,
 })
 export class AppComponent {
+  defaultImage = 'https://www.placecage.com/1000/1000';
+  image = 'https://images.unsplash.com/photo-1443890923422-7819ed4101c0?fm=jpg';
 }
