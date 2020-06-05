@@ -3,9 +3,13 @@
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^9.1.9",
-    "@angular/core": "^9.1.9"
+    "@angular/core": "^9.1.9",
+    "ng-lazyload-image": "^8.0.1"
   },
   "dependencies": {
     "tslib": "^1.10.0"
+  },
+  "devDependencies": {
+    "ng-lazyload-image": "^8.0.1"
   }
 }
