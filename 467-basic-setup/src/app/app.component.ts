@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+
+  artist = {
+    images: [{
+      url: 'https://images.unsplash.com/photo-1443890923422-7819ed4101c0?fm=jpg'
+    }]
+  }
 }
